@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # -*- coding:utf8 -*-
 import paramiko
-server = {'servername':['ip',port,'user','password']}   #change it as your own ssh account
 server = {'Vultr':['xxx.xxx.xxx.xxx',22,'root','password'], # change it as your own SSH account,use ','to split them
 	   'Linode':['xxx.xxx.xxx.xxx',22,'root','password']}	# 'server name':['ip',port,'user','password']
 def Reboot_VPS(server_name):
@@ -23,9 +22,6 @@ def Reboot_VPS(server_name):
 		print('***********************************************')
 		print(' %s connect ERROR'%server_name)
 		print('***********************************************')
-
-
-
 
 if __name__ == "__main__":
 	Reboot_VPS('servername')  #change it as your own server name
