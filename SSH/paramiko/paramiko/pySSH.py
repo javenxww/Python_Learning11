@@ -1,4 +1,5 @@
-﻿# -*- coding:utf-8 -*-
+﻿#！/usr/bin/env python3
+# -*- coding:utf-8 -*-
 import paramiko
 def Login_account():   #登陆口令
 	global IP , User ,Port ,Passwd
