@@ -11,7 +11,7 @@ def Login_account():   #登陆口令
 	if Port == '':Port = 22
 	else:Port = int(Port)
 	Passwd = input("Please input your password(defult:'password'): ")
-	if Passwd == '':Passwd = 'javenxww'
+	if Passwd == '':Passwd = 'password'
 	else:pass
 
 def SSH_connect():

@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 # -*- coding:utf8 -*-
 import paramiko
-server = {'Vultr':['45.32.27.223',22,'root','javenxww'],
-	   'Banwagon':['23.83.226.209',29972,'root','javenxww'],
-	   'AlphaRacks':['104.129.0.186',22,'root','javenxww'],
-	   'HostUs':['45.58.55.54',22,'root','javenxww']}
+server = {'Vultr':['xxx.xxx.xxx.xxx',22,'root','password'], # change it as your own SSH account,use ','to split them
+	   'Linode':['xxx.xxx.xxx.xxx',22,'root','password']}	# 'server name':['ip',port,'user','password']
 
 def Reboot_VPS(server_name):
 	server_account = server[server_name]
@@ -30,7 +28,5 @@ def Reboot_VPS(server_name):
 
 
 if __name__ == "__main__":
-	Reboot_VPS('Banwagon')
-	Reboot_VPS('Vultr')
-	Reboot_VPS('HostUs')
-	Reboot_VPS('AlphaRacks')
+	Reboot_VPS('Vultr')  #change it as your own server name
+	Reboot_VPS('Linode')
